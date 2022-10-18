@@ -119,15 +119,19 @@ h2 {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  background: rgb(22,27,30);
+  background: linear-gradient(90deg, rgba(22,27,30,1) 30%, rgba(0,0,0,1) 50%);
+  bottom: 20px;
 }
 
-.main img {
+/* .main img {
   position: absolute;
   top: 0;
   z-index: -300;
-}
+} */
 
 #main-text {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,6 +142,25 @@ h2 {
   width: 1240px;
   height: 531px;
   padding: 0 98px;
+}
+
+#main-text:before {
+  content: '';
+  position: absolute;
+  z-index: 300;
+  width: 97%;
+  height: 100%;
+  back
+}
+
+#main-text:after {
+  content: '';
+  position: absolute;
+  width: 3%;
+  left: 97%;
+  height: 100%;
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%);
 }
 
 #main-text p {
@@ -194,14 +217,33 @@ h2 {
   filter: invert(79%) sepia(53%) saturate(713%) hue-rotate(93deg) brightness(95%) contrast(95%);
 }
 
+#mobile-download-wrap {
+  display: flex;
+  justify-content: center;
+  background: rgb(17,29,25);
+  width: 100%;
+  box-shadow: 0 6px 10px 0px rgb(17,29,25,.5);
+}
+
 #mobile-download {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url('../img/download_bg.jpg');
-  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: 40px; */
   width: 1240px;
   padding: 22px 60px;
+}
+
+#mobile-download:before {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  z-index: 300;
+  background: rgb(17,29,25);
 }
 
 #mobile-download span {
