@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ul,li { list-style: none;}
+a { text-decoration: none; color: #000; }
+
+#fixed {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  /* background: red; */
+}
+
+.header-fixed-wrap {
+  display: sticky;
+  top: 0;
+  width: 100%;
+  height: 140px;
+}
+
+.fixed {
+  display: sticky;
+  position: absolute;
+  height: 80px;
+  z-index: 800;
+  top: 0;
+}
+
+#header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+  padding: 0 80px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+}
+
+#header img {
+  padding: 0 40px 0 0;
+}
+
+#gnb ul {
+  overflow: hidden;
+}
+
+#gnb ul li {
+  float: left;
+  margin: 6px 14px;
+  padding: 8px;
+  font-size: 18px;
+  letter-spacing: -.4px;
+}
+
+#gnb ul li {
+  position: relative;
+}
+
+#gnb ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 8px;
+  background: #10eba4;
+  transition: 0.3s ease;
+}
+
+#gnb ul li:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+#gnb ul li:nth-child(7), #gnb ul li:nth-child(8) {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -1px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+#gnb ul li:nth-child(8) a:after, #gnb ul li:nth-child(9) a:after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/gnb_icon.png');
+  background-size: cover;
+  margin: 0 0 1px 7px;
+}
+
+#icon-wrap {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 140px;
+  border-left: 1px solid #eee;
+}
+
+.icon:last-child {
+  background: linear-gradient(180deg,#10eba4,#0bcea2);
+  border: 8px solid linear-gradient(180deg,#10eba4,#0bcea2);
+}
+
+.icon:hover {
+  background: #000;
+}
+
+.icon:hover img {
+  filter: invert(100%);
+}
+
+.icon:last-child:hover img {
+  filter: invert(79%) sepia(53%) saturate(713%) hue-rotate(93deg) brightness(95%) contrast(95%);
+}
+
+.share {
+  width: 100%;
+  height: 100vh;
+}
