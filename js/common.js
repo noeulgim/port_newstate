@@ -39,20 +39,14 @@ $(function(){
     $('#cookie').css('display','none');
   });
 
-  $(window).scroll(function(){
-    var wHeight = $(this).height(); //-> this : window
-    //wHeight 변수를 쓴 이유 : 밑의 .slide에 대한 함수에서 this는 .slide이기 때문에 window의 height를 사용하기 위함
-    var thisScrollTop = $(this).scrollTop();
-    $('#media').each(function(){
-      var thisOffset = $(this).offset(); //화면의 상단에서부터의 거리를 가져올 수 있다. (offset.top / offset.left)
-      var navBar = $('#fixed');
-      if( thisOffset.top - 200 <= thisScrollTop ) {
-        navBar.addClass('fixed');
-      }else {
-        navBar.removeClass('fixed');
-      }
-    });
-  });
+  // $(window).scroll(function(){
+  //   var wHeight = $(this).height(); //-> this : window
+  //   //wHeight 변수를 쓴 이유 : 밑의 .slide에 대한 함수에서 this는 .slide이기 때문에 window의 height를 사용하기 위함
+  //   var thisScrollTop = $(this).scrollTop();
+  //   if( thisScrollTop > 0 ) {
+  //     $('#header-fixed-wrap').css('display','fixed');
+  //   }
+  // });
 
   var hoverDataBg = $(this).data('bg');
   var findNonAct = $('.commu-box-hover').find('.nonactive');
