@@ -39,14 +39,15 @@ $(function(){
     $('#cookie').css('display','none');
   });
 
-  // $(window).scroll(function(){
-  //   var wHeight = $(this).height(); //-> this : window
-  //   //wHeight 변수를 쓴 이유 : 밑의 .slide에 대한 함수에서 this는 .slide이기 때문에 window의 height를 사용하기 위함
-  //   var thisScrollTop = $(this).scrollTop();
-  //   if( thisScrollTop > 0 ) {
-  //     $('#header-fixed-wrap').css('display','fixed');
-  //   }
-  // });
+  $(window).scroll(function(){
+    var wHeight = $(this).height();
+    var thisScrollTop = $(this).scrollTop();
+    if( thisScrollTop > 0 ) {
+      $('#header-fixed-wrap').css('border-bottom','1px solid #ccc');
+    }else if( thisScrollTop == 0 ) {
+      $('#header-fixed-wrap').css('border-bottom','none');
+    }
+  });
 
   var hoverDataBg = $(this).data('bg');
   var findNonAct = $('.commu-box-hover').find('.nonactive');
