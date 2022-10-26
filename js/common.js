@@ -62,4 +62,25 @@ $(function(){
       findhov.addClass('nonactive');
     });
   });
+
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+  $( ".play-btn.left" ).click(function() {
+    $( ".swiper-button-prev" ).trigger( "click" );
+  });
+  $( ".play-btn.right" ).click(function() {
+    $( ".swiper-button-next" ).trigger( "click" );
+  });
 });

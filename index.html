@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>뉴스테이트 모바일</title>
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -69,21 +71,27 @@
     <section id="media">
       <div id="title">
         <h2>미디어</h2>
-        <a href="#"><img src="./img/plus_icon.png" alt=""></a>
+        <a href="./img/plus_icon.png"></a>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="./img/M1IpSuqeAliccJFzWISadGFRMqymFzX9.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail01.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail02.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail03.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail04.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail05.jpg" alt=""></a></div>
+          <div class="swiper-slide"><a href="#"><img src="./img/video_thumbnail06.jpg" alt=""></a></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
       </div>
       <div id="video">
         <div class="video-btn">
-          <a href="#" class="play-btn left"><img src="./img/video_left_btn.png" alt=""></a>
+          <div class="play-btn left"><img src="./img/video_left_btn.png" alt=""></div>
           <a href="#" class="play-btn video"></a>
-          <a href="#" class="play-btn right"><img src="./img/video_right_btn.png" alt=""></a>
-        </div>
-        <div class="video-select">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <div class="play-btn right"><img src="./img/video_right_btn.png" alt=""></div>
         </div>
       </div>
     </section>
