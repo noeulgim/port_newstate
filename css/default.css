@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   width: 100%;
@@ -47,7 +49,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 140px;
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 
 #header {
@@ -56,7 +58,7 @@ header {
 }
 
 #header img {
-  padding: 0 40px 0 0;
+  padding: 0 0 0 20px;
 }
 
 #gnb ul {
@@ -121,9 +123,18 @@ header {
   border-left: 1px solid #eee;
 }
 
-.icon:last-child {
+.icon:nth-child(3) {
   background: linear-gradient(180deg,#10eba4,#0bcea2);
   border: 8px solid linear-gradient(180deg,#10eba4,#0bcea2);
+}
+
+.icon:nth-child(4) {
+  border-right: 1px solid #eee;
+}
+
+.icon:nth-child(4) img {
+  width: 20px;
+  height: 16px;
 }
 
 .icon:hover {
@@ -134,11 +145,31 @@ header {
   filter: invert(100%);
 }
 
-.icon:last-child:hover img {
+.icon:nth-child(3):hover img {
   filter: invert(79%) sepia(53%) saturate(713%) hue-rotate(93deg) brightness(95%) contrast(95%);
 }
 
 .share {
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (max-width: 1570px) {
+  #gnb {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1570px) {
+  #header-wrap {
+    padding: 0 80px;
+  }
+
+  #header img {
+    padding: 0 40px 0 0;
+  }
+
+  .icon:last-child {
+    display: none;
+  }
 }
