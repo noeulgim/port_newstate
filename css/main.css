@@ -190,6 +190,26 @@ h2 {
   background-position: 168px -548px;
 } */
 
+/*************************** modal 영역 *******************************/
+
+#modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.77);
+  top: 0;
+  left: 0;
+  /* display: none; */
+  z-index: 10000;
+}
+
+/* .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/*************************** modal 영역 *******************************/
+
 #main-wrap {
   position: relative;
   display: flex;
