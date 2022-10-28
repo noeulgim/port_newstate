@@ -173,3 +173,37 @@ header {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+  header {
+    position: relative;
+    height: 60px;
+  }
+
+  #header-wrap {
+    height: 60px;
+  }
+
+  #header img {
+    width: 95px;
+    height: 38px;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon img {
+    width: 22px;
+    height: 23px;
+  }
+
+  .icon:nth-child(3) img {
+    width: 16px;
+    height: 20px;
+  }
+}

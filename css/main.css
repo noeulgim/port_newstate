@@ -373,7 +373,7 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%);
   /* background-image: url('../img/video_thumbnail01.jpg'); */
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 40px);
   cursor: pointer;
   /* padding: 0 20px; */
   margin: 0 auto;
@@ -813,6 +813,11 @@ footer {
 }
 
 @media screen and (max-width: 1275px) {
+  #main-text {
+    padding: 100px 80px;
+    height: 100%;
+  }
+
   #media {
     width: 100%;
   }
@@ -924,7 +929,90 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .play-btn.video {
+    width: 69px;
+    height: 69px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .play-btn.left, .play-btn.right {
+    display: none;
+  }
+
+  #bottom-wrap {
+    background-image: url('../img/download_bg_mobile.jpg');
+    background-size: cover;
+  }
+
+  #bottom > img {
+    display: none;
+  }
+
+  .bottom-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #bottom .bottom-left span {
+    font-size: 20px;
+    margin-bottom: 0 51px 4px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .bottom-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-button a {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
+
 @media screen and (max-width: 467px) {
+  .main {
+    background: url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #main-text {
+    position: relative;
+    top: 280px;
+    height: 280px;
+    padding: 0 20px 40px;
+    background-image: none;
+    background: none;
+  }
+
+  #main-text p {
+    font-size: 30px;
+    color: #000;
+  }
+
+  #main-text a {
+    margin-top: 30px;
+  }
+
+  #main-text a, #main-text a:after {
+    width: 200px;
+  }
+
+  #main-text:after {
+    width: 0;
+  }
+
+  #media {
+    padding: 300px 20px 0;
+  }
+
   .commu-icon {
     background-image: url('../img/icons_sns_simple.png');
     width: 44px;
@@ -971,36 +1059,18 @@ footer {
     padding: 20px;
   }
 
-  #bottom-wrap {
-    background-image: url('../img/download_bg_mobile.jpg');
-    background-size: cover;
+  .footer-left .logo img {
+    width: 169px;
+    height: 39px;
+    margin: 0 0 32px;
   }
 
-  #bottom > img {
-    display: none;
+  .link-area ul li a {
+    font-size: 12px;
   }
 
-  .bottom-left {
-    margin-left: 51px;
-  }
-
-  #bottom .bottom-left span {
-    font-size: 20px;
-    margin-bottom: 0 51px 4px;
-    text-align: center;
-    color: #fff;
-    font-weight: 400;
-  }
-
-  .bottom-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bottom-button a {
-    margin-left: 0;
-    margin-top: 12px;
+  .footer-right img {
+    width: 50px;
+    height: 60px;
   }
 }
