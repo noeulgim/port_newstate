@@ -30,7 +30,8 @@
   }
 }
 
-body { font-family: 'Noto Sans KR', sans-serif; }
+body { font-family: 'Noto Sans KR', sans-serif; width:100%;
+overflow-x:hidden;}
 button { border: none; background: none; }
 a { text-decoration: none; }
 
