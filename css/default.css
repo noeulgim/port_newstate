@@ -155,8 +155,26 @@ header {
 }
 
 @media screen and (max-width: 1570px) {
-  #gnb {
-    display: none;
+  #header {
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 48px 20px;
+  }
+  #header a {
+    display: block;
+  }
+  #gnb ul li {
+    width: 100%;
+  }
+  #gnb ul li a {
+    margin-top: 20px;
   }
 }
 

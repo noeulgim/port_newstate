@@ -779,6 +779,11 @@ footer {
   line-height: 1.56;
 }
 
+.copyright p + p {
+  display: inline;
+  margin-top: 0;
+  flex: 50%;
+}
 
 @media screen and (min-width: 1276px) {
   #commu-box > div:nth-of-type(1):hover .commu-icon {
@@ -962,6 +967,22 @@ footer {
     display: none;
   }
 
+  #commu-box div a div {
+    margin-top: 0;
+    width :150px;
+    border: 2px solid #fff;
+    font-size: 22px;
+    height: 66px;
+    line-height: 66px;
+  }
+
+  #commu-box p {
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 16px;
+    line-height: 3;
+  }
+
   #bottom-wrap {
     background-image: url('../img/download_bg_mobile.jpg');
     background-size: cover;
@@ -1086,8 +1107,17 @@ footer {
     margin: 0 0 32px;
   }
 
+  .link-area ul li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   .link-area ul li a {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .copyright p:last-child {
+    display: block;
   }
 
   .footer-right img {
