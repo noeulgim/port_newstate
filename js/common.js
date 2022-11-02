@@ -83,4 +83,15 @@ $(function(){
   $( ".play-btn.right" ).click(function() {
     $( ".swiper-button-next" ).trigger( "click" );
   });
+
+  $('.close-btn').click(function(){
+    // $('#header').css('opacity','0');
+    // $('#gnb ul').css('opacity','1');
+    // $('#icon-wrap').css('z-index','1000');
+    $('#gnb').toggle();
+  });
+  $('.menu-btn').click(function(){
+    $('#icon-wrap').css('z-index','0');
+    $('#gnb').css('opacity','1');
+  })
 });

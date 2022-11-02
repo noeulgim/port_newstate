@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#content-wrap {
+  position: relative;
+  background: url('../img/bg_redemption_gun.8327b01.jpg') no-repeat center center;
+  width: 1760px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 112px 50px 200px;
+  overflow: hidden;
+}
